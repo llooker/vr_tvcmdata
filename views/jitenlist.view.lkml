@@ -1,6 +1,7 @@
 view: jitenlist {
-  sql_table_name: `strategic-block-298801.test.jitenlist`
-    ;;
+  # sql_table_name: `strategic-block-298801.test.jitenlist`    ;;
+sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
+
 
   dimension: _15sec_grp_female20_29 {
     type: string

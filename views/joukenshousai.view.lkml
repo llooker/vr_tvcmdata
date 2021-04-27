@@ -1,6 +1,6 @@
 view: joukenshousai {
-  sql_table_name: `strategic-block-298801.test.joukenshousai`
-    ;;
+  # sql_table_name: `strategic-block-298801.test.joukenshousai`    ;;
+sql_table_name: `vr-blocks.tvcmdata.joukenshousai` ;;
 
   dimension: byousuu {
     type: number
