@@ -19,5 +19,12 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 #     sql_on: ${users.id} = ${orders.user_id} ;;
 #   }
 # }
-explore: jitenlist {}
+explore: jitenlist {
+  label: "時点リスト"
+  join: jitenlist_tate {
+    type: left_outer
+    relationship: one_to_many
+    sql_on: ${jitenlist.seq} = ${jitenlist_tate.seq} ;;
+  }
+}
 explore: joukenshousai {}

@@ -319,6 +319,7 @@ sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
     type: number
     sql: ${TABLE}.SEQ ;;
     label: "SEQ"
+    primary_key: yes
   }
 
   dimension: sozai_code {
