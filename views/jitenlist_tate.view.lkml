@@ -169,7 +169,6 @@ view: jitenlist_tate {
   dimension: seq {
     type: number
     sql: ${TABLE}.SEQ ;;
-    primary_key: yes
   }
 
   dimension: s_type {
@@ -195,7 +194,7 @@ view: jitenlist_tate {
   }
 
   measure: shichouritsu_tate {
-    type: average
+    type: sum
     sql: ${value} ;;
     label: "視聴率（GRPタイプ、ターゲット指定）"
   }
