@@ -319,11 +319,11 @@ sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
         label: "銘柄A"
       }
       when: {
-        sql: ${TABLE}.status = 'フジパン　ネオバターロール' ;;
+        sql: ${TABLE}.meigaramei = 'フジパン　ネオバターロール' ;;
         label: "銘柄B"
       }
       when: {
-        sql: ${TABLE}.status = '味の素　Ｂｉｓｔｒｏ　Ｄｏ' ;;
+        sql: ${TABLE}.meigaramei = '味の素　Ｂｉｓｔｒｏ　Ｄｏ' ;;
         label: "銘柄C"
       }
       # else: "銘柄X"
