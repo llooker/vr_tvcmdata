@@ -334,6 +334,12 @@ sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
     type: number
     sql: ${TABLE}.SEQ ;;
     label: "SEQ"
+    # primary_key: yes
+  }
+
+  dimension: seq_meigaracode {
+    type: string
+    sql: ${seq} || '_' || ${meigara_code} || '_' || ${chiku};;
     primary_key: yes
   }
 
