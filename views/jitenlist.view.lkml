@@ -376,9 +376,9 @@ sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
     drill_fields: []
   }
 
-  measure: sityouritsu_setai_15byou {
-    type: average
-    sql: ${_15sec_grp_setai} ;;
-    label: "視聴率（世帯、15秒換算）"
-  }
+  # measure: sityouritsu_setai_15byou {
+  #   type: average
+  #   sql: ${_15sec_grp_setai} ;;
+  #   label: "GRP（世帯、15秒換算）"
+  # }
 }

@@ -428,13 +428,13 @@ view: jitenlist_tate {
   measure: shichouritsu_tate {
     type: sum
     sql: ${value} ;;
-    label: "視聴率（GRPタイプ、ターゲット指定）"
+    label: "GRP（タイプ、ターゲット指定）"
   }
 
   measure: running_total {
     type: running_total
     sql: ${shichouritsu_tate} ;;
-    label: "視聴率（累積）"
+    label: "GRP（累積）"
   }
 
   set: detail {
