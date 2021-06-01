@@ -24,7 +24,7 @@ explore: jitenlist {
   join: jitenlist_tate {
     type: left_outer
     relationship: one_to_many
-    sql_on: ${jitenlist.seq} = ${jitenlist_tate.seq} and ${jitenlist.meigara_code} = ${jitenlist_tate.meigara_code} and ${jitenlist.chiku} = ${jitenlist_tate.chiku};;
+    sql_on: ${jitenlist.kyoku} = ${jitenlist_tate.kyoku} and ${jitenlist.syukkou_hiduke_date} = ${jitenlist_tate.syukkou_hiduke_date} and ${jitenlist.syukkou_jikoku} = ${jitenlist_tate.syukkou_jikoku} and ${jitenlist.meigara_code} = ${jitenlist_tate.meigara_code} and ${jitenlist.chiku} = ${jitenlist_tate.chiku};;
   }
 }
 explore: joukenshousai {}

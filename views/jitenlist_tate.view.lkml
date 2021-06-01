@@ -1,7 +1,10 @@
 view: jitenlist_tate {
   derived_table: {
     sql:  SELECT
-        SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        target_no,
         meigara_code,
         chiku,
         s_type,
@@ -10,7 +13,10 @@ view: jitenlist_tate {
       FROM
       (
       SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-01' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -19,7 +25,10 @@ view: jitenlist_tate {
        FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-02'  as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -28,7 +37,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-03' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -37,7 +49,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-04' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -46,7 +61,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-05' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -55,7 +73,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-06' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -64,7 +85,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-07' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -73,7 +97,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-08' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -82,7 +109,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-09' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -91,7 +121,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-10' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -100,7 +133,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-11' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -109,7 +145,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-12' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -118,7 +157,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-13' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -127,7 +169,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-14' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -136,7 +181,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-15' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -145,7 +193,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-16' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -154,7 +205,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-17' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -163,7 +217,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-18' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -172,7 +229,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-19' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -181,7 +241,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-20' as target_no,
        meigara_code,
        chiku,
        '15秒換算' as s_type,
@@ -190,7 +253,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-01' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -199,7 +265,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-02' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -208,7 +277,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-03' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -217,7 +289,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
       UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-04' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -226,7 +301,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
        UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-05' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -235,7 +313,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
         UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-06' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -244,7 +325,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
         UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-07' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -253,7 +337,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-08' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -262,7 +349,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-09' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -271,7 +361,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
     UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-10' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -280,7 +373,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-11' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -289,7 +385,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-12' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -298,7 +397,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-13' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -307,7 +409,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-14' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -316,7 +421,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-15' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -325,7 +433,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-16' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -334,7 +445,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-17' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -343,7 +457,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-18' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -352,7 +469,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-19' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -361,7 +481,10 @@ view: jitenlist_tate {
         FROM `vr-blocks.tvcmdata.jitenlist`
      UNION ALL
        SELECT
-       SEQ,
+        kyoku,
+        syukkou_hiduke,
+        syukkou_jikoku,
+        'G01-20' as target_no,
        meigara_code,
        chiku,
        '本数ベース' as s_type,
@@ -369,20 +492,41 @@ view: jitenlist_tate {
        CAST(`HonsuubaseGRP_shufu_role` as STRING) as value
         FROM `vr-blocks.tvcmdata.jitenlist`
         )
-      --where 1=1
-      --and colorname is null
-      order by SEQ
+      -- order by target_no
        ;;
+  }
+
+  dimension: kyoku {
+    type: string
+    sql: ${TABLE}.kyoku ;;
+    label: "局"
+  }
+
+  dimension_group: syukkou_hiduke {
+    type: time
+    timeframes: [
+      raw,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    convert_tz: no
+    datatype: date
+    sql: ${TABLE}.syukkou_hiduke ;;
+    label: "出稿日付"
+  }
+
+  dimension: syukkou_jikoku {
+    type: string
+    sql: ${TABLE}.syukkou_jikoku ;;
+    label: "出稿時刻"
   }
 
   measure: count {
     type: count
     drill_fields: [detail*]
-  }
-
-  dimension: seq {
-    type: number
-    sql: ${TABLE}.SEQ ;;
   }
 
   dimension: meigara_code {
@@ -397,9 +541,9 @@ view: jitenlist_tate {
     label: "地区"
   }
 
-  dimension: seq_meigaracode {
+  dimension: p_key {
     type: string
-    sql: ${seq} || '_' || ${meigara_code} || '_' || ${chiku};;
+    sql: ${kyoku}  || '_' || ${syukkou_hiduke_date}  || '_' || ${syukkou_jikoku}. || '_' || ${meigara_code} || '_' || ${chiku};;
     # primary_key: yes
   }
 
@@ -409,10 +553,16 @@ view: jitenlist_tate {
     label: "GRPタイプ"
   }
 
+  dimension: target_no {
+    type: string
+    sql: ${TABLE}.target_no ;;
+  }
+
   dimension: target {
     type: string
     sql: ${TABLE}.target ;;
     label: "ターゲット"
+    order_by_field: target_no
   }
 
   # dimension: value {
@@ -438,6 +588,6 @@ view: jitenlist_tate {
   }
 
   set: detail {
-    fields: [seq, s_type, target, value]
+    fields: [s_type, target, value]
   }
 }

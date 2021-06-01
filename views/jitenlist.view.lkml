@@ -139,6 +139,142 @@ sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
     type: string
     sql: ${TABLE}.chiku ;;
     label: "地区"
+    order_by_field: chiku_code
+  }
+
+  dimension: chiku_code {
+    type: string
+    case: {
+      when: {
+        sql: ${TABLE}.chiku = '関東' ;;
+        label: "01"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '関西' ;;
+        label: "02"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '名古屋' ;;
+        label: "03"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '北部九州' ;;
+        label: "04"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '札幌' ;;
+        label: "05"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '仙台' ;;
+        label: "06"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '広島' ;;
+        label: "07"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '静岡' ;;
+        label: "08"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '長野' ;;
+        label: "09"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '福島' ;;
+        label: "10"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '新潟' ;;
+        label: "11"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '岡・香' ;;
+        label: "12"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '熊本' ;;
+        label: "13"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '鹿児島' ;;
+        label: "14"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '長崎' ;;
+        label: "15"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '金沢' ;;
+        label: "16"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '山形' ;;
+        label: "17"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '岩手' ;;
+        label: "18"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '鳥・島' ;;
+        label: "19"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '愛媛' ;;
+        label: "20"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '富山' ;;
+        label: "21"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '山口' ;;
+        label: "22"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '秋田' ;;
+        label: "23"
+        }
+      when: {
+        sql: ${TABLE}.chiku = '青森' ;;
+        label: "24"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '大分' ;;
+        label: "25"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '沖縄' ;;
+        label: "26"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '高知' ;;
+        label: "27"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '宮崎' ;;
+        label: "28"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '山梨' ;;
+        label: "29"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '福井' ;;
+        label: "30"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '佐賀' ;;
+        label: "31"
+      }
+      when: {
+        sql: ${TABLE}.chiku = '徳島' ;;
+        label: "32"
+      }
+      else: "99"
+    }
   }
 
   dimension: cmnaiyou {
@@ -337,9 +473,9 @@ sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
     # primary_key: yes
   }
 
-  dimension: seq_meigaracode {
+  dimension: p_key {
     type: string
-    sql: ${seq} || '_' || ${meigara_code} || '_' || ${chiku};;
+    sql: ${kyoku}  || '_' || ${syukkou_hiduke_date}  || '_' || ${syukkou_jikoku}. || '_' || ${meigara_code} || '_' || ${chiku};;
     primary_key: yes
   }
 
