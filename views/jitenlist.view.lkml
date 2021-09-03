@@ -1,5 +1,4 @@
 view: jitenlist {
-  # sql_table_name: `strategic-block-298801.test.jitenlist`    ;;
 sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
 
 
@@ -449,21 +448,6 @@ sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
     type: string
     sql: ${TABLE}.meigaramei ;;
     label: "銘柄名"
-    # case: {
-    #   when: {
-    #     sql: ${TABLE}.meigaramei = 'アサヒグループ食品　ＭＩＮＴＩＡ' ;;
-    #     label: "銘柄A"
-    #   }
-    #   when: {
-    #     sql: ${TABLE}.meigaramei = 'フジパン　ネオバターロール' ;;
-    #     label: "銘柄B"
-    #   }
-    #   when: {
-    #     sql: ${TABLE}.meigaramei = '味の素　Ｂｉｓｔｒｏ　Ｄｏ' ;;
-    #     label: "銘柄C"
-    #   }
-    #   # else: "銘柄X"
-    # }
   }
 
   dimension: seq {
@@ -512,9 +496,4 @@ sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
     drill_fields: []
   }
 
-  # measure: sityouritsu_setai_15byou {
-  #   type: average
-  #   sql: ${_15sec_grp_setai} ;;
-  #   label: "GRP（世帯、15秒換算）"
-  # }
 }

@@ -492,7 +492,6 @@ view: jitenlist_tate {
        CAST(`HonsuubaseGRP_shufu_role` as STRING) as value
         FROM `vr-blocks.tvcmdata.jitenlist`
         )
-      -- order by target_no
        ;;
   }
 
@@ -564,11 +563,6 @@ view: jitenlist_tate {
     label: "ターゲット"
     order_by_field: target_no
   }
-
-  # dimension: value {
-  #   type: string
-  #   sql:REPLACE(${TABLE}.value,"\\*",null)  ;;
-  # }
 
   dimension: value {
     type: number
