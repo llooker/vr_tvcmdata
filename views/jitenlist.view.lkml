@@ -446,7 +446,20 @@ sql_table_name: `vr-blocks.tvcmdata.jitenlist` ;;
 
   dimension: meigaramei {
     type: string
-    sql: ${TABLE}.meigaramei ;;
+    case: {
+      when: {
+        sql: ${TABLE}.meigaramei = 'アサヒグループ食品　ＭＩＮＴＩＡ' ;;
+        label: "銘柄A"
+      }
+      when: {
+        sql: ${TABLE}.meigaramei = 'フジパン　ネオバターロール' ;;
+        label: "銘柄B"
+      }
+      when: {
+        sql: ${TABLE}.meigaramei = '味の素　Ｂｉｓｔｒｏ　Ｄｏ' ;;
+        label: "銘柄C"
+      }
+    }
     label: "銘柄名"
   }
 
